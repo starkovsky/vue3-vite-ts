@@ -1,0 +1,9 @@
+/.idea
+.DS_Store
+.eslintcache
+.stylelintcache
+/coverage/*
+node_modules
+/dist
+/dist-ssr
+*.local

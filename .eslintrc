@@ -1,0 +1,24 @@
+{
+  "root": true,
+  "env": {
+    "node": true,
+    "jest": true
+  },
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser",
+    "ecmaVersion": 2021
+  },
+  "plugins": ["html", "prettier"],
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "plugin:vue/vue3-recommended",
+    "plugin:prettier/recommended"
+  ],
+  "ignorePatterns": ["**/node_modules/**", "**/dist/**"],
+  "rules": {
+    "prettier/prettier": "warn",
+    "no-console": "warn",
+    "no-debugger": "warn"
+  }
+}

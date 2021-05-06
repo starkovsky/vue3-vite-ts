@@ -1,10 +1,10 @@
 <template>
-  <img alt="Vue logo" src="../assets/logo.png" class="mx-auto" />
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+  <div class="home">{{ test }}</div>
+  <HelloWorld></HelloWorld>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent, ref } from 'vue';
 import HelloWorld from '../components/HelloWorld.vue';
 
 export default defineComponent({
@@ -12,13 +12,9 @@ export default defineComponent({
   components: {
     HelloWorld,
   },
+  setup() {
+    const test = ref('Test');
+    return { test };
+  },
 });
 </script>
-
-<style>
-img {
-  @apply w-52 h-52;
-
-  background-color: #000;
-}
-</style>

@@ -15,7 +15,7 @@
     "plugin:vue/vue3-recommended",
     "plugin:prettier/recommended"
   ],
-  "ignorePatterns": ["**/node_modules/**", "**/dist/**"],
+  "ignorePatterns": ["**/node_modules/**", "**/dist/**", "**/coverage/**"],
   "rules": {
     "prettier/prettier": "warn",
     "no-console": "warn",

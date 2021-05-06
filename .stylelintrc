@@ -4,7 +4,7 @@
     "stylelint-config-rational-order",
     "stylelint-prettier/recommended"
   ],
-  "ignoreFiles": ["dist/**", "node_modules/**"],
+  "ignoreFiles": ["**/dist/**", "**/node_modules/**", "**/coverage/**"],
   "rules": {
     "selector-max-attribute": 1,
     "selector-max-class": 3,

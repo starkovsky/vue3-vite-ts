@@ -8455,10 +8455,10 @@ vscode-uri@^3.0.2:
   resolved "https://registry.yarnpkg.com/vscode-uri/-/vscode-uri-3.0.2.tgz#ecfd1d066cb8ef4c3a208decdbab9a8c23d055d0"
   integrity sha512-jkjy6pjU1fxUvI51P+gCsxg1u2n8LSt0W6KrCNQceaziKzff74GoWmjVG46KieVzybO1sttPQmYfrwSHey7GUA==
 
-vscode-vue-languageservice@0.25.6:
-  version "0.25.6"
-  resolved "https://registry.yarnpkg.com/vscode-vue-languageservice/-/vscode-vue-languageservice-0.25.6.tgz#acca46be01b2c9426d617feebe87669e373dae32"
-  integrity sha512-996YtwBLKnKS74iqxevr5zwkMJobVhSsUPAjHEl/TRMPPNsw902HgAk45Q4i7E5OjiMOi4VnMSioMItUm4SCHQ==
+vscode-vue-languageservice@^0.25.11:
+  version "0.25.11"
+  resolved "https://registry.yarnpkg.com/vscode-vue-languageservice/-/vscode-vue-languageservice-0.25.11.tgz#cc40a3418b90cf9430588438681d051292ba0b09"
+  integrity sha512-PyMqzaJVu/o0uNz60eBqgm2ggchuER3SstYY+2yIva46g+8o/4vaQD1ZnLYanncAxtk1sHlcAJPX9llWoGEoPA==
   dependencies:
     "@starptech/prettyhtml" "^0.10.0"
     "@volar/code-gen" "^0.25.4"
@@ -8513,12 +8513,12 @@ vue-router@^4.0.8:
   dependencies:
     "@vue/devtools-api" "^6.0.0-beta.10"
 
-vue-tsc@^0.1.4:
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/vue-tsc/-/vue-tsc-0.1.4.tgz#c26a6e9f286c36bc870cff9b5e802262ac2c9c98"
-  integrity sha512-BwExl/GTDS77wfOqYY29/8/fO4HMSwYeiRxeE5KcpCLqc1i4KUEVMjskB1Lzjvo1K1osux04p8D8c+ltqgta2Q==
+vue-tsc@^0.1.5:
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/vue-tsc/-/vue-tsc-0.1.5.tgz#d50fd3208395e498a364ea766f529e9f5dd7f5ad"
+  integrity sha512-MFlbjzwQ5x7KIjwh8bBf2B/SW3Dl450fuz6zC779x28V0d1Qo7JibeRo5O5xMdNhN8AjoZgz9KTZUCZikbKOzg==
   dependencies:
-    vscode-vue-languageservice "0.25.6"
+    vscode-vue-languageservice "^0.25.11"
 
 vue@^3.0.7:
   version "3.0.11"

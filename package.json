@@ -51,6 +51,6 @@
     "vite": "^2.3.7",
     "vue-eslint-parser": "^7.6.0",
     "vue-jest": "^5.0.0-alpha.10",
-    "vue-tsc": "^0.1.7"
+    "vue-tsc": "^0.2.0"
   }
 }

@@ -21,7 +21,7 @@
     "vuex": "^4.0.2"
   },
   "devDependencies": {
-    "@types/jest": "^26.0.23",
+    "@types/jest": "^26.0.24",
     "@typescript-eslint/eslint-plugin": "^4.28.1",
     "@typescript-eslint/parser": "^4.28.1",
     "@vitejs/plugin-vue": "^1.2.4",
@@ -48,7 +48,7 @@
     "tailwindcss": "^2.2.4",
     "ts-jest": "^26.5.6",
     "typescript": "^4.3.5",
-    "vite": "^2.3.8",
+    "vite": "^2.4.1",
     "vue-eslint-parser": "^7.7.2",
     "vue-jest": "^5.0.0-alpha.10",
     "vue-tsc": "^0.2.0"

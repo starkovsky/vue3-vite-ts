@@ -21,7 +21,7 @@
     "vuex": "^4.0.2"
   },
   "devDependencies": {
-    "@types/jest": "^26.0.23",
+    "@types/jest": "^26.0.24",
     "@typescript-eslint/eslint-plugin": "^4.28.1",
     "@typescript-eslint/parser": "^4.28.2",
     "@vitejs/plugin-vue": "^1.2.4",

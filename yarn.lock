@@ -1177,10 +1177,10 @@
   resolved "https://registry.yarnpkg.com/@vue/shared/-/shared-3.2.0-beta.3.tgz#043c5a4d3bc9676508557e9199c625995cf14929"
   integrity sha512-IzJBLNwh2CDTbVqQt979f5rczw9Uib97RkaGckmUGuC9bAG1sw/EXskrxc87p8xxaiI70LdVHnOhriprfKjmMw==
 
-"@vue/test-utils@^2.0.0-rc.10":
-  version "2.0.0-rc.10"
-  resolved "https://registry.yarnpkg.com/@vue/test-utils/-/test-utils-2.0.0-rc.10.tgz#9ed689cd7d5a1c9ef6693806010e464d2ecc13b2"
-  integrity sha512-Z8jY+askU08svsI37NcJSLmWrfkZ/1ATA1DENWezRUX2uv3QyEj7idwx+rfeNSOrlNNBh4NTzypBKOUOklxBRA==
+"@vue/test-utils@^2.0.0-rc.12":
+  version "2.0.0-rc.12"
+  resolved "https://registry.yarnpkg.com/@vue/test-utils/-/test-utils-2.0.0-rc.12.tgz#716a84d915d6045640eeac416cc2a2acd514e06e"
+  integrity sha512-G9BGRYlfwWjhorGjnpniC3hcYn1pCG2NqKG68fdUpk3DgWKordZ+BsEFD/SAmKdTZVMCY1huFwY3XAbPc+AgRw==
 
 abab@^2.0.0, abab@^2.0.3, abab@^2.0.5:
   version "2.0.5"

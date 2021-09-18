@@ -16,12 +16,12 @@
   },
   "dependencies": {
     "normalize.css": "^8.0.1",
-    "vue": "^3.2.2",
+    "vue": "^3.2.12",
     "vue-router": "^4.0.11",
     "vuex": "^4.0.2"
   },
   "devDependencies": {
-    "@types/jest": "^27.0.0",
+    "@types/jest": "^27.0.1",
     "@typescript-eslint/eslint-plugin": "^4.29.1",
     "@typescript-eslint/parser": "^4.29.3",
     "@vitejs/plugin-vue": "^1.4.0",

@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "normalize.css": "^8.0.1",
-    "vue": "^3.2.14",
+    "vue": "^3.2.18",
     "vue-router": "^4.0.11",
     "vuex": "^4.0.2"
   },
@@ -24,7 +24,7 @@
     "@types/jest": "^27.0.2",
     "@typescript-eslint/eslint-plugin": "^4.29.1",
     "@typescript-eslint/parser": "^4.31.2",
-    "@vitejs/plugin-vue": "^1.7.1",
+    "@vitejs/plugin-vue": "^1.9.2",
     "@vue/compiler-sfc": "^3.2.12",
     "@vue/test-utils": "^2.0.0-rc.14",
     "autoprefixer": "^10.3.1",

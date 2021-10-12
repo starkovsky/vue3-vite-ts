@@ -1,23 +1,26 @@
 module.exports = {
+  testRegex: '.*\\.spec\\.ts$',
   moduleFileExtensions: ['js', 'ts', 'vue'],
   modulePaths: ['<rootDir>/src', '<rootDir>/node_modules'],
-  testRegex: '.*\\.spec\\.ts$',
-  transform: {
-    '^.+\\.(t|j)s$': 'ts-jest',
-    '^.+\\.(vue)$': 'vue-jest',
-  },
   transformIgnorePatterns: ['/node_modules/'],
+  transform: {
+    '^.+\\.(j|t)sx?$': 'ts-jest',
+    '^.+\\.(vue)$': 'vue3-jest',
+  },
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1',
   },
-  testEnvironment: 'jest-environment-jsdom-fifteen',
   snapshotSerializers: ['<rootDir>/node_modules/jest-serializer-vue'],
   testURL: 'http://localhost/',
   watchPlugins: [
-    require.resolve('jest-watch-typeahead/filename'),
-    require.resolve('jest-watch-typeahead/testname'),
+    'jest-watch-typeahead/filename',
+    'jest-watch-typeahead/testname',
   ],
   coverageDirectory: 'coverage',
-  collectCoverageFrom: ['src/**/*.{js,ts,vue}'],
-  coveragePathIgnorePatterns: ['^.+\\.d\\.ts$'],
+  collectCoverageFrom: ['<rootDir>/src/**/*.{js,ts,vue}'],
+  coveragePathIgnorePatterns: ['^.+\\.d\\.ts$', 'src/runtimeEnv.ts'],
+  modulePathIgnorePatterns: ['<rootDir>/.yarn-cache/'],
+  cacheDirectory: '<rootDir>/tmp/cache/jest',
+  timers: 'fake',
+  testEnvironment: 'jsdom',
 };

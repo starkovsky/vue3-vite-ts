@@ -1,6 +1,7 @@
-# compiled output
+# tmp & compiled output
 dist
-/node_modules
+/tmp
+/bundle-stats.html
 
 # Logs
 logs
@@ -14,6 +15,7 @@ lerna-debug.log*
 
 # OS
 .DS_Store
+/node_modules
 
 # Tests
 /coverage
@@ -36,4 +38,4 @@ lerna-debug.log*
 !.vscode/extensions.json
 
 # Configs
-.env
+.env.*.local

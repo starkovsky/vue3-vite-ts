@@ -1,4 +1,5 @@
 import { shallowMount } from '@vue/test-utils';
+
 import About from '@/views/About.vue';
 
 describe('TheComponent.vue', () => {

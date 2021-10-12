@@ -2,7 +2,7 @@
   "extends": [
     "stylelint-config-standard",
     "stylelint-config-rational-order",
-    "stylelint-prettier/recommended"
+    "stylelint-config-prettier"
   ],
   "ignoreFiles": ["**/dist/**", "**/node_modules/**", "**/coverage/**"],
   "rules": {

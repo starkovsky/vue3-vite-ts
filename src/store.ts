@@ -6,24 +6,30 @@ import {
   createLogger,
 } from 'vuex';
 
-export interface State {
-  count: number;
+import { isPROD } from '@/runtimeEnv';
+
+export interface IRootState {
+  isPageDisabled: boolean;
 }
 
-export const key: InjectionKey<Store<State>> = Symbol();
+export const key: InjectionKey<Store<IRootState>> = Symbol();
 
-export const store = createStore<State>({
+export const store = createStore<IRootState>({
   state: {
-    count: 0,
+    isPageDisabled: false,
   },
+  getters: {},
   mutations: {
-    increment(state) {
-      state.count++;
+    setPageDiabled(state) {
+      state.isPageDisabled = true;
+    },
+    setPageEnabled(state) {
+      state.isPageDisabled = false;
     },
   },
-  plugins: process.env.NODE_ENV === 'production' ? [] : [createLogger()],
+  plugins: isPROD ? [] : [createLogger()],
 });
 
-export function useVuex(): Store<State> {
+export function useVuex(): Store<IRootState> {
   return baseUseStore(key);
 }

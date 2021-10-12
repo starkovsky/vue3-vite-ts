@@ -9,16 +9,145 @@
     "parser": "@typescript-eslint/parser",
     "ecmaVersion": 2021
   },
-  "plugins": ["html", "prettier"],
+  "plugins": ["html", "import"],
   "extends": [
     "plugin:@typescript-eslint/recommended",
     "plugin:vue/vue3-recommended",
-    "plugin:prettier/recommended"
+    "prettier"
   ],
-  "ignorePatterns": ["**/node_modules/**", "**/dist/**", "**/coverage/**"],
+  "ignorePatterns": [
+    "**/node_modules/**",
+    "**/dist/**",
+    "**/coverage/**",
+    "**/tmp/**"
+  ],
   "rules": {
-    "prettier/prettier": "warn",
     "no-console": "warn",
-    "no-debugger": "warn"
-  }
+    "no-debugger": "warn",
+    "vue/component-name-in-template-casing": [
+      "error",
+      "PascalCase",
+      { "registeredComponentsOnly": true }
+    ],
+    "vue/component-api-style": ["error", ["composition"]],
+    "vue/custom-event-name-casing": ["error", "kebab-case"],
+    "vue/html-comment-content-newline": [
+      "error",
+      {
+        "singleline": "never",
+        "multiline": "always"
+      }
+    ],
+    "vue/html-comment-content-spacing": ["error", "always"],
+    "vue/html-comment-indent": ["error", 2],
+    "vue/no-boolean-default": ["error", "default-false"],
+    "vue/no-static-inline-styles": [
+      "error",
+      {
+        "allowBinding": false
+      }
+    ],
+    "vue/no-unregistered-components": [
+      "error",
+      { "ignorePatterns": ["router-link", "router-view"] }
+    ],
+    "vue/no-lone-template": [
+      "error",
+      {
+        "ignoreAccessible": false
+      }
+    ],
+    "vue/no-useless-v-bind": [
+      "error",
+      {
+        "ignoreIncludesComment": false,
+        "ignoreStringEscape": false
+      }
+    ],
+    "vue/no-v-text": ["error"],
+    "vue/padding-line-between-blocks": ["error", "always"],
+    "vue/v-for-delimiter-style": ["error", "of"],
+    "vue/v-on-event-hyphenation": [
+      "error",
+      "always",
+      {
+        "autofix": true
+      }
+    ],
+    "vue/v-on-function-call": ["error", "never"],
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index",
+          "object",
+          "type",
+          "unknown"
+        ],
+        "pathGroups": [
+          {
+            "pattern": "@/+(runtimeEnv|store|router)",
+            "group": "external",
+            "position": "after"
+          },
+          {
+            "pattern": "@/modules/**",
+            "group": "internal",
+            "position": "after"
+          },
+          {
+            "pattern": "@/shared/**",
+            "group": "internal",
+            "position": "after"
+          },
+          {
+            "pattern": "@/utils/**",
+            "group": "internal",
+            "position": "after"
+          },
+          {
+            "pattern": "@/http/**!(dto)",
+            "group": "internal",
+            "position": "after"
+          },
+          {
+            "pattern": "@/http/dto/**",
+            "group": "internal",
+            "position": "after"
+          },
+          {
+            "pattern": "@/ui/**/!(*.vue)",
+            "group": "internal",
+            "position": "after"
+          },
+          {
+            "pattern": "@/ui/**/*.vue",
+            "group": "internal",
+            "position": "after"
+          },
+          {
+            "pattern": "{./,../,../../,../../../,../../../../}**/*.vue",
+            "group": "parent",
+            "position": "after"
+          }
+        ],
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": false
+        },
+        "newlines-between": "always"
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["**/*.spec.ts"],
+      "rules": { "@typescript-eslint/no-explicit-any": "off" }
+    }
+  ]
 }

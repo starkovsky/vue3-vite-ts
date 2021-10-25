@@ -20,7 +20,7 @@
     "precommit": "yarn lint && yarn test && yarn build"
   },
   "dependencies": {
-    "axios": "0.22.0",
+    "axios": "0.24.0",
     "js-cookie": "3.0.1",
     "normalize.css": "8.0.1",
     "qs": "6.10.1",
@@ -36,7 +36,7 @@
     "@typescript-eslint/parser": "4.33.0",
     "@vitejs/plugin-vue": "1.9.3",
     "@vue/compiler-sfc": "3.2.20",
-    "@vue/test-utils": "2.0.0-rc.15",
+    "@vue/test-utils": "2.0.0-rc.16",
     "autoprefixer": "10.3.7",
     "eslint": "7.32.0",
     "eslint-config-prettier": "8.3.0",

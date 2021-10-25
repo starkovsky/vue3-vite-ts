@@ -20,7 +20,7 @@
     "precommit": "yarn lint && yarn test && yarn build"
   },
   "dependencies": {
-    "axios": "0.22.0",
+    "axios": "0.24.0",
     "js-cookie": "3.0.1",
     "normalize.css": "8.0.1",
     "qs": "6.10.1",

@@ -9,22 +9,19 @@ import {
 import { isPROD } from '@/runtimeEnv';
 
 export interface IRootState {
-  isPageDisabled: boolean;
+  count: number;
 }
 
 export const key: InjectionKey<Store<IRootState>> = Symbol();
 
 export const store = createStore<IRootState>({
   state: {
-    isPageDisabled: false,
+    count: 0,
   },
   getters: {},
   mutations: {
-    setPageDiabled(state) {
-      state.isPageDisabled = true;
-    },
-    setPageEnabled(state) {
-      state.isPageDisabled = false;
+    setCount(state, payload: number) {
+      state.count = payload;
     },
   },
   plugins: isPROD ? [] : [createLogger()],

@@ -1,5 +1,7 @@
 {
   "extends": [
+    "stylelint-config-html",
+    "stylelint-config-recommended-vue",
     "stylelint-config-standard",
     "stylelint-config-rational-order",
     "stylelint-config-prettier"
@@ -23,6 +25,12 @@
       }
     ],
     "declaration-block-trailing-semicolon": null,
-    "no-descending-specificity": null
+    "no-descending-specificity": null,
+    "selector-class-pattern": [
+      "[a-z]+",
+      {
+        "resolveNestedSelectors": true
+      }
+    ]
   }
 }

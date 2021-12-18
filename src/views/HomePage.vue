@@ -1,3 +1,21 @@
+<script setup lang="ts">
+import { storeToRefs } from 'pinia';
+
+import HelloWorld from '../components/HelloWorld.vue';
+
+import { useGlobalStore } from '@/stores/global';
+
+const store = useGlobalStore();
+const { counter } = storeToRefs(store);
+
+const increment = () => {
+  store.increment();
+};
+const decrement = () => {
+  store.decrement();
+};
+</script>
+
 <template>
   <div class="p-5 text-center">
     {{ counter }}
@@ -18,21 +36,3 @@
   </div>
   <hello-world class="text-emerald-500 text-center"></hello-world>
 </template>
-
-<script setup lang="ts">
-import { storeToRefs } from 'pinia';
-
-import HelloWorld from '../components/HelloWorld.vue';
-
-import { useGlobalStore } from '@/stores/global';
-
-const store = useGlobalStore();
-const { counter } = storeToRefs(store);
-
-const increment = () => {
-  store.increment();
-};
-const decrement = () => {
-  store.decrement();
-};
-</script>

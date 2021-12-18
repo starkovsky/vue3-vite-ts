@@ -1,3 +1,5 @@
+<script setup lang="ts"></script>
+
 <template>
   <nav class="nav">
     <router-link to="/" class="dm-link">Home</router-link> |
@@ -5,8 +7,6 @@
   </nav>
   <router-view></router-view>
 </template>
-
-<script setup lang="ts"></script>
 
 <style>
 @import 'normalize.css';

@@ -18,6 +18,12 @@
   "rules": {
     "no-console": "warn",
     "no-debugger": "warn",
+    "vue/component-tags-order": [
+      "error",
+      {
+        "order": ["script", "template", "style"]
+      }
+    ],
     "vue/component-name-in-template-casing": [
       "error",
       "kebab-case",

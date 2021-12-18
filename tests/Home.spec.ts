@@ -1,11 +1,26 @@
-import { shallowMount } from '@vue/test-utils';
+import { shallowMount, VueWrapper } from '@vue/test-utils';
+import { createPinia, setActivePinia } from 'pinia';
 
 import Home from '@/views/HomePage.vue';
 
+let wrapper: VueWrapper<any>;
+
+function createComponent() {
+  return shallowMount(Home);
+}
+
+beforeEach(() => {
+  setActivePinia(createPinia());
+});
+
+afterEach(() => {
+  wrapper.unmount();
+});
+
 describe('TheComponent.vue', () => {
   it('renders Test text', () => {
-    const wrapper = shallowMount(Home);
+    wrapper = createComponent();
 
-    expect(wrapper.html()).toContain('Test');
+    expect(wrapper.findAll('button').length).toBe(2);
   });
 });

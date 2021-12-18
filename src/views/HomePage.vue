@@ -21,7 +21,6 @@
 
 <script setup lang="ts">
 import { storeToRefs } from 'pinia';
-import { ref } from 'vue';
 
 import HelloWorld from '../components/HelloWorld.vue';
 

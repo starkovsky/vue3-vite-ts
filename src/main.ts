@@ -1,8 +1,8 @@
+import { createPinia } from 'pinia';
 import { createApp } from 'vue';
 import { START_LOCATION } from 'vue-router';
 
 import { router } from './router';
-import { store, key } from './store';
 
 import App from '@/App.vue';
 
@@ -16,10 +16,12 @@ router.beforeEach(async (to, from, next) => {
   next();
 });
 
+const pinia = createPinia();
+
 const app = createApp(App);
 
 app.use(router);
-app.use(store, key);
+app.use(pinia);
 
 app.mount('#app');
 

@@ -6,13 +6,7 @@
   <router-view></router-view>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
-
-export default defineComponent({
-  name: 'App',
-});
-</script>
+<script setup lang="ts"></script>
 
 <style>
 @import 'normalize.css';
@@ -20,6 +14,7 @@ export default defineComponent({
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@tailwind variants;
 
 #app {
   @apply p-0 m-0;
@@ -35,10 +30,5 @@ export default defineComponent({
 
 .nav a {
   @apply mx-2;
-}
-
-.home {
-  @apply mx-auto w-52 h-52;
-  @apply flex justify-center items-center;
 }
 </style>

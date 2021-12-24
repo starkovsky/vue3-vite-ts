@@ -23,7 +23,7 @@
     "axios": "0.24.0",
     "js-cookie": "3.0.1",
     "normalize.css": "8.0.1",
-    "pinia": "^2.0.6",
+    "pinia": "^2.0.9",
     "qs": "6.10.2",
     "vue": "^3.2.26",
     "vue-router": "4.0.12"

@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { storeToRefs } from 'pinia';
 
+import { isDEV, isPROD, MODE, APP_TITLE, API_URL } from '@/runtimeEnv';
+
 import HelloWorld from '../components/HelloWorld.vue';
 
 import { useGlobalStore } from '@/stores/global';
@@ -34,5 +36,10 @@ const decrement = () => {
       </button>
     </div>
   </div>
+  <span id="runtime-env-isDEV">{{ isDEV }}</span>
+  <span id="runtime-env-isPROD">{{ isPROD }}</span>
+  <span id="runtime-env-MODE">{{ MODE }}</span>
+  <span id="runtime-env-APP_TITLE">{{ APP_TITLE }}</span>
+  <span id="runtime-env-API_URL">{{ API_URL }}</span>
   <hello-world class="text-emerald-500 text-center"></hello-world>
 </template>

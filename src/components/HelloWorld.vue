@@ -1,7 +1,5 @@
-<script setup lang="ts">
-import { isDEV } from '@/runtimeEnv';
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <div>Hello World {{ isDEV }}</div>
+  <div>Hello World</div>
 </template>

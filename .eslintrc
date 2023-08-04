@@ -48,7 +48,7 @@
         "allowBinding": false
       }
     ],
-    "vue/no-unregistered-components": [
+    "vue/no-undef-components": [
       "error",
       { "ignorePatterns": ["router-link", "router-view"] }
     ],

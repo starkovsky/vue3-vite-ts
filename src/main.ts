@@ -6,7 +6,7 @@ import { router } from './router';
 
 import App from '@/App.vue';
 
-import 'vite-plugin-svg-icons/register';
+import 'virtual:svg-icons-register';
 
 router.beforeEach(async (to, from, next) => {
   if (from === START_LOCATION) {

@@ -9,7 +9,7 @@
 </template>
 
 <style>
-@import 'normalize.css';
+@import url('normalize.css');
 
 @tailwind base;
 @tailwind components;
